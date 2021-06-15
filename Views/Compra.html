@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>COMPRA CERTA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+
+<body>
+      <!-- barra de menu -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand navbar-title" href="Principal.html"><strong>COMPRA CERTA</strong></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="Produtos.html"><strong>Produtos</strong></a></li>
+              <li><a href="Login.html"><strong>Pedidos</strong></a></li>
+              <li><a href="Quemsomos.html"><strong>Quem Somos</strong></a></li>
+            </ul>
+
+            <form class="navbar-form navbar-right" action="">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" name="search">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="Cadastro.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container mt-3">
+        <h2>LISTA DE PEDIDOS</h2>
+        <p>Produto de Limpeza Veja + Brilho</p>
+        <div class="media border p-3 ">
+          <img src="veja.jfif" alt="John Doe" class="mr-3 mt-3 rounded-circle margin-bottom" style="width:60px;">
+          <div class="media-body d-flex">
+            <input type="number" class="form-control margin-bottom" placeholder="quantidade" style="width: 180px;">      
+          </div>
+        </div>
+        <p>Água sanitária Qboa Super Alvejante </p>
+        <div class="media border p-3">
+          <img src="qboa.jfif" alt="John Doe" class="mr-3 mt-3 rounded-circle margin-bottom" style="width:60px;">
+          <div class="media-body d-flex">
+            <input type="number" class="form-control margin-bottom" placeholder="quantidade" style="width: 180px;">      
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2>DADOS DE PAGAMENTOS</h2>
+        <form name="formCadastro" action="Principal.html" onsubmit="return verificaSenha();">
+            
+            <div class="form-group">
+                   <label for="cpf">Número do Cartão:</label>
+                   <input type="number" class="form-control" id="cpf" placeholder="Informe o número" name="cpf" required>
+            </div>
+            <div class="form-group">
+               <label for="nome">Nome do Titular:</label>
+               <input type="text" class="form-control" id="nome" placeholder="Informe o nom do titular" name="nome" required>
+            </div> 
+
+             <div class="form-group">
+               <label for="email">Validade do Cartão:</label>
+               <input type="date" value="2020/12/20" class="form-control" id="email" placeholder="Informe o data de validade" name="email" required>
+             </div>
+
+             <div class="form-group">
+               <label for="senha">Código de segurança:</label>
+               <input type="number" class="form-control" id="senha" placeholder="Informe o código" name="senha" required>
+             </div>
+           </form>
+      </div>
+
+      <div class="container">
+        <h2>ENDEREÇO DE ENTREGA</h2>
+        <form name="formCadastro" action="Realizado.html" onsubmit="return verificaSenha();">
+            
+            <div class="form-group">
+              <label for="cpf">Logradouro</label>
+              <input type="text" class="form-control" id="cpf" placeholder="Informe Endereço" name="cpf" required>
+           </div>
+            <div class="form-group">
+               <label for="nome">Bairro</label>
+               <input type="text" class="form-control" id="nome" placeholder="Informe o Bairro" name="nome" required>
+            </div> 
+            <div class="form-group">
+              <label for="cpf">CEP</label>
+              <input type="number" class="form-control" id="cpf" placeholder="Informe o CEP" name="cpf" required>
+           </div>
+            <div class="form-group">
+            <label for="nome">Cidade</label>
+            <input type="text" class="form-control" id="nome" placeholder="Informe a Cidade" name="nome" required>
+          </div> 
+            <div class="form-group">
+            <label for="nome">Estado</label>
+            <input type="text" class="form-control" id="nome" placeholder="Informe o Estado" name="nome" required>
+          </div> 
+
+             <button type="submit" class="btn btn-default">Finalizar Compra</button>
+           </form>
+      </div>
+
+      <footer class="container-fluid text-center">
+        <p>© 2021 Compra Certa.</p> 
+        <p>Todos os direitos reservados. </p>
+        <p>Comércio de Produtos Esportivos Ltda - CNPJ: 59.546.515/0016-10</p>
+        <p>José Semião Rodrigues Agostinho, 1370 - Galpão Unidade 17 - Nível 0, 1 e 2 - CEP 06833-300 - Embu das Artes/SP.</p>
+      </footer>
+
+</body>
+
+</html>
